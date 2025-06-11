@@ -1,0 +1,247 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1 {
+  color: #4169E1;
+  font: 600;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
+footer p {
+  text-align: center;
+  line-height: 50px;
+  justify-content: center;
+  font-size: 17px;
+  margin: 0;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  background: #4169E1;
+  background: linear-gradient(140deg, rgba(65, 105, 225, 1) 0%, rgba(150, 54, 104, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 50px;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-weight: 525;
+  padding: 20px;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* ========== MAIN BODY & LAYOUT ========== */
+.main-body {
+  margin: auto;
+}
+
+.goals {
+  justify-self: center;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about {
+  justify-content: left;
+  margin-left: 0;
+}
+
+.image {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: right;
+}
+
+.advancements {
+  margin-left: 10%;
+}
+
+.advancements ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.advancements ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-right: 10%;
+  padding: 10px;
+  border: 1px solid #4169E1; /* Light gray border */
+  border-radius: 8px;      /* Rounded corners */
+  background-color: white; /* Light background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+/* ========== SIGNUP SECTION ========== */
+.signup {
+  width: 80%;
+  justify-self: center;
+}
+
+.signup h1 {
+  margin: 25px 0;
+}
+
+/* ========== MISSION & VIDEO ========== */
+.mission,
+.video {
+  background: #4169E1;
+  background: linear-gradient(140deg, rgba(65, 105, 225, 1) 0%, rgba(150, 54, 104, 1) 100%, rgba(255, 255, 255, 1) 100%);
+}
+
+.mission {
+  padding: 10px;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+}
+
+.video iframe {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.video h2 {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* ========== FORM STYLING ========== */
+#form {
+  background: #f2f9fd;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2a5d84;
+}
+
+.form-input {
+  width: 95%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 12px;
+  background-color: #dbe9f2;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+}
+
+.form-input:focus,
+.form-input:hover {
+  background-color: #f9fbfd;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(42, 93, 132, 0.2);
+}
+
+.form-button {
+  background-color: #2a5d84;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  width: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #17415e;
+}
+
+/* ========== RADIO BUTTONS ========== */
+.radio-group {
+  margin-top: 8px;
+  display: flex;
+  gap: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-btn {
+  margin-bottom: 0;
+  accent-color: #2a5d84;
+  transform: scale(1.2);
+  cursor: pointer;
+}
